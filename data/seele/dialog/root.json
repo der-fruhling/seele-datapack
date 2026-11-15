@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Seele utilities",
+  "external_title": "Server utilities...",
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": "Click a button for exciting utilities"
+    }
+  ],
+  "actions": [
+    {
+      "label": "View online map...",
+      "tooltip": "https://map.derfruhling.net/",
+      "action": {
+        "type": "open_url",
+        "url": "https://map.derfruhling.net/"
+      }
+    },
+    {
+      "label": "Get seele miaw",
+      "action": {
+        "type": "run_command",
+        "command": "trigger give_seele_miaw"
+      }
+    },
+    {
+      "label": "Help me! (wikis and stuff)",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "seele:help"
+      }
+    },
+    {
+      "label": "death",
+      "tooltip": "this button hurts man",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "seele:death"
+      }
+    },
+    {
+      "label": "Show quick actions...",
+      "tooltip": [
+        "You can also press [",
+        { "keybind": "key.quickActions" },
+        "] to access this page quicker."
+      ],
+      "action": {
+        "type": "show_dialog",
+        "dialog": "seele:quick_actions"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "Back"
+  }
+}

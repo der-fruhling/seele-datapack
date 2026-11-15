@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Quick actions...",
+  "actions": [
+    {
+      "label": "View online map...",
+      "tooltip": "https://map.derfruhling.net/",
+      "action": {
+        "type": "open_url",
+        "url": "https://map.derfruhling.net/"
+      }
+    },
+    {
+      "label": "Server utilities...",
+      "tooltip": "Can also be accessed in the pause menu.",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "seele:root"
+      }
+    },
+    {
+      "label": "Set home...",
+      "tooltip": "Set your current location as a home named 'default'",
+      "action": {
+        "type": "run_command",
+        "command": "sethome default"
+      }
+    },
+    {
+      "label": "Teleport to home...",
+      "tooltip": "Teleport to your 'default' home position (if one exists)",
+      "action": {
+        "type": "run_command",
+        "command": "home default"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "Back"
+  }
+}

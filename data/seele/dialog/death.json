@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "death mode",
+  "external_title": "death",
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": [
+        "are you ",
+        { "italic": true, "text": "sure"},
+        " you want death?"
+      ]
+    }
+  ],
+  "yes": {
+    "label": "yes :(",
+    "tooltip": "this is fr, you will die if you click this button",
+    "action": {
+      "type": "run_command",
+      "command": "trigger death"
+    }
+  },
+  "no": {
+    "label": "no don't do that",
+    "action": {
+      "type": "show_dialog",
+      "dialog": "seele:root"
+    }
+  }
+}

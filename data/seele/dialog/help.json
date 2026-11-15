@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Self-serve help",
+  "external_title": "Help me! (wikis and stuff)",
+  "body": [
+    {
+      "type": "item",
+      "item": {
+        "id": "minecraft:lectern"
+      },
+      "show_description": false
+    },
+    {
+      "type": "plain_message",
+      "contents": "These buttons were added by data packs, but would be replaced by this server's custom menu. They're kept here in case you need them."
+    }
+  ],
+  "dialogs": [
+    "home_brewed:start",
+    "enchantencore:wiki"
+  ],
+  "exit_action": {
+    "label": "Back",
+    "action": {
+      "type": "show_dialog",
+      "dialog": "seele:root"
+    }
+  }
+}
